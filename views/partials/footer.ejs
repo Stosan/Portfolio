@@ -1,0 +1,55 @@
+<div class="first-style-sec">
+    <section id="contacts" class="contacts space-section container">
+        <h2>Let's Connect</h2>
+        <span id="message"></span> 
+            <form class="" action="#" method="post">
+                <fieldset>
+                    <input type="text" name="user-name" placeholder="Name"><!--
+                    --><input type="email" name="user-email" placeholder="Email">
+                    
+                <input type="text" name="user-number" placeholder="Phone Number">
+                    <textarea placeholder="A note" name="user-note"></textarea>
+                </fieldset>
+                <button class="btn" id="btnsendemail">Send</button>
+            </form><!--
+            --><div class="social-col">
+                <p>Do you have questions?<br>May be suggestions?<br>Just write me. <p style="margin:-20px 0;padding:0;color:var(--main_color)">ayosamuel92@gmail.com</p><br>I will reply you.</p>
+                <p><b><span class="slash">Connect</span> with me</b></p>
+                <ul>
+                    <div class="br-icons"><li><a href="https://twitter.com/officialsamayo" target="_blank"><span class="icons fa fa-twitter"></span></a></li>
+                    <li><a href="https://www.facebook.com/belod.pav" target="_blank"><span class="icons fa fa-linkedin"></span></a></li>
+                    <li><a href="https://codepen.io/belodpav/" target="_blank"><span class="icons fa fa-codepen"></span></a></li><br class="br-icons"></div>
+                    <li><a href="" target="_blank"><span class="icons fa fa-google"></span></a></li>
+                    <li><a href="https://github.com/Stosan" target="_blank"><span class="icons fa fa-git"></span></a></li>
+                </ul>
+            </div>
+    </section>
+</div>
+<script>  
+    $(document).ready(function(){  
+        var name;  
+        var email;  
+        var mobile;  
+        var message;  
+        $("#btnsendemail").click(function() {        
+            name    = $("#user-name").val();  
+            email   = $("#user-email").val();  
+            mobile  = $("#user-number").val();  
+            message = $("#user-note").val();  
+            $("#message").text("Sending Email please wait ...");  
+            $.get("/project",  
+                {  
+                    name: name,  
+                    email: email,  
+                    mobile: mobile,  
+                    message: message  
+                },  
+            function(data) {  
+            if(data == "sent") {  
+                $("#message").html("Email has been send successfully.");  
+            }  
+          });  
+        });  
+    });  
+    </script> 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
