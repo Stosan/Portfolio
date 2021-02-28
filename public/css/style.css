@@ -8,7 +8,7 @@
 	--secondary_color:#74031f;
 	--combo_color: linear-gradient(#ec0b43, #74031f);
   }
-
+  @import url('https://fonts.googleapis.com/css2?family=Notosans:wght@100&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,7 +27,8 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -132,6 +133,7 @@ img {
 	vertical-align: middle;
 }
 .logo {
+    font-family: 'Poppins', sans-serif;
   content: "";
   height: 42px;
   line-height: 60px;font-weight: 900;
