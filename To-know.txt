@@ -1,0 +1,5 @@
+git push origin -u -f main -- to force push to github
+git commit -m "First commit" -- to make forst commit
+git add . -- to prepare local directory for merge with remote
+git push origin main -- to push to github
+git init -- to initial 

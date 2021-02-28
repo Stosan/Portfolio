@@ -1,0 +1,116 @@
+<%- include('./partials/header'); -%>
+<link rel="stylesheet" href="./css/proj.css">
+</head>
+<body>
+
+
+	<%- include('./partials/nav'); -%>
+
+	<div class="jumbotron">
+  
+		<div id="black"></div>
+	
+		
+		<div style="" class="me1" >
+		  <div class="container-fluid">
+			<div class="col-md-5 col-md-offset-1">
+			  
+			<h4 >My identity is</h4>
+			<h1 class="me2"><br class="visible-lg "/>&#8212;Innovation&#8212;</h1>
+			</div>
+		   <style>
+			   			   .me1{
+  animation: backInLeft;
+  animation-duration: 3s; 
+}
+	
+			 /*  .me2 {
+  animation: rubberBand; 
+  animation-delay: 3s;
+  animation-duration: 1s; 
+}*/
+.slida{
+	animation: slideInLeft;
+  animation-duration: 3s; 
+}
+		   </style>
+	  
+		  </div>
+		</div>
+	  </div>
+	  	<!-- Portfolio -->
+		<section id="portfolio" class="portfolio space-section container">
+			<div style="text-align: left;">
+			<h2>&#8212;PORTFOLIO  <span class="slash">PROJECTS</span>&#8212;</h2></div>
+			<br>
+			<!-- Tiles box for tablets and larger sreens -->
+			<div class="tiles-box">
+					<div class="item col-sm">
+						<a  href="https://www.linkedin.com/in/sam-ayo" target="_blank">
+							<img class="pr" src="asset/thnk+.JPG" alt="project1">
+							</a>
+							<div class="descr">
+									<h3>AI Powered Website</h3>
+			<p style="font-style: italic;text-decoration: none;">Built using Node, Express, MongoDB, JS + jQuery, CSS + Bootstrap.</p>
+							
+							</div>
+						
+					</div>
+					<br>
+					<hr style="border:1px solid rgb(231, 231, 231);">
+					<br>
+					<div class="item col-sm">
+						<a href="https://www.linkedin.com/in/sam-ayo" target="_blank">
+							<img class="pr" src="asset/Ll-website-UI-01-01-01.png" alt="project3"></a>
+						<div class="descr">
+							<h3>E-commerce Site</h3><p style="font-style: italic;text-decoration: none;">Built using React and Vanilla JS</p>
+							
+						</div>
+					
+					</div>
+					<br>
+					<div class="item col-sm">
+						<a href="https://www.linkedin.com/in/sam-ayo" target="_blank">
+							<img class="pr" src="asset/RCM.JPG" alt="project3"></a>
+						<div class="descr">
+							<h3>Religious Site</h3>	<p style="font-style: italic;text-decoration: none;">Lots of PHP fun and goodies, BS4 + vanilla JS.</p>
+							
+						</div>
+					
+					</div>
+					<br>
+					<hr style="border:1px solid rgb(231, 231, 231);">
+					<br>
+					<div class="item col-sm">
+							<a href="https://www.linkedin.com/in/sam-ayo" target="_blank">
+								<img class="pr" src="asset/log.JPG" alt="project2" style="width:25rem">
+							<div class="descr">
+								<h3>Login Form</h3>
+						</div>
+					</a>
+				</div>
+				
+					<div class="item col-sm">
+					<a href="https://www.linkedin.com/in/sam-ayo" target="_blank">
+						<img class="pr" src="asset/predic.JPG" alt="project4">
+						
+						<div class="descr">
+							<h3>Machine Learning Model</h3>
+						</div>
+					</a>
+					</div>
+			</div>
+		
+		</section>
+
+		<br>
+		<hr>
+<%- include('./partials/cv'); -%>
+	<br>
+<%- include('./partials/footer'); -%>
+	</main>
+			
+  <script  src="./js/script.js"></script>
+  <script  src="./js/projsld.js"></script>
+</body>
+</html>

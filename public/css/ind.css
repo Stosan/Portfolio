@@ -1,0 +1,260 @@
+
+/******Copyright Sam Ayo*********/
+
+/* Banner Section */
+ /*.photo-banner {
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-moz-animation-name: slide-up;
+	-webkit-animation-name: slide-up;
+  }
+ 
+  @-moz-keyframes slide-up {
+	from {
+	  margin-top: 100%;
+	}
+	to {
+	  margin-top: 0%;
+	}
+  }
+  
+  @-webkit-keyframes slide-up {
+	from {
+	  margin-top: 100%;
+	}
+	to {
+	  margin-top: 0%;
+	}
+  }*/
+  .banner {
+	text-align: left;
+  }
+  .content h2{
+	  text-shadow: 2px 2px 5px rgba(207, 207, 207, 0.4);font-size: 2em;margin-top:40px;
+	  
+  }
+  .header_sect {
+	 display: flex;
+	 align-items: center;
+	  
+  }
+  .header_line {
+	  width: 80px;
+	  height: 2px;
+	  background-color: black;
+	  margin: 0 19px 0 0;
+	  
+  }
+  @media(min-width: 320px) {
+	  
+	  .descr-banner {
+		  display: block;
+		  text-align: center;
+		  padding: 50px 0 60px 0;
+	  }
+	  .descr-banner h1{line-height: 40px;font-weight: bold;font-family: 'Roboto', 'sans serif';
+	  }
+	  .card p{
+		  text-align: justify;
+		  font-size: 0.9em;
+	  }
+	
+  }
+  @media(min-width: 768px) {
+	  .photo-banner, .descr-banner {
+		  display: inline-block;
+		  vertical-align: top;
+	  }
+	  .photo-banner {
+		  width: 40%;
+		  padding-top: 64px;
+		  margin-left: 0;
+		  line-height: 0;
+	  }
+	  .descr-banner {
+		  
+		  text-align: left;
+		padding-left: 60px;
+		padding-top: 45px;
+	  }
+  }
+  
+  @media(min-width: 1200px) {
+	  .photo-banner {
+		  margin-left: 20px;
+	  }
+	  .descr-banner {
+		padding-left: 90px;position: absolute;
+		left:20;
+		padding-top: 135px;
+	  }
+  }
+  /* About Section */
+  @media(min-width: 768px) {
+	  .about p {
+		  padding: 0 80px;
+	  }
+  }@media(min-width: 1200px) {
+	  .about p {
+		  padding: 0 20px;
+	  }
+  }
+  .page-content {
+	  display:flex;
+	  margin: 0 auto;text-align: center;
+	  padding:10px 80px 10px 80px
+	}
+  .scard{
+	  margin-left:80px;
+  }
+	@media (min-width: 800px) {
+  
+	}
+	
+	.card {
+	  padding:25px;
+	  background-color: #fff;
+	  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 
+		  0 2px 2px rgba(0, 0, 0, 0.1), 
+		  0 4px 4px rgba(0, 0, 0, 0.1),
+		  0 8px 8px rgba(0, 0, 0, 0.1), 
+		  0 16px 16px rgba(0, 0, 0, 0.1);
+	}
+	.card p{
+		text-align: left;
+	}
+  
+	@media (min-width: 600px) {
+	  .card {
+		height: 500px;width: 30vw;
+	  }
+	}
+  /* Portfolio Section */
+  
+  .mob-list-projects {
+	  width: 100%;
+	  text-align: center;
+	  margin-bottom: 30px;
+  }
+  .mob-list-projects a {
+	  display: block;
+	  text-decoration: none;
+  }
+  .mob-list-projects h3 {
+	  padding: 40px 0;
+	  font-size: 22px;
+  }
+  .list-color-1 {
+	  background-color: #fae3e9;
+  }
+  .list-color-2 {
+	  background-color: #bcd9d4;
+  }
+  .list-color-3 {
+	  background-color: #f4eac6;
+  }
+  .list-color-4 {
+	  background-color: #f6d5c6;
+  }
+  .col-6,.col-7,.col-2-4 {
+	  display: inline-block;
+	  position: relative;
+	  overflow: hidden;
+  }
+  .tiles-box {
+	  margin-bottom: 30px;
+	  line-height: 0;
+	  text-align: left;
+  }
+  
+  
+  .descr {
+	  width: 100%;
+	  height: 140px;
+	  position: absolute;
+	  z-index: 1000;
+	  bottom: -140px;
+	  background-image: linear-gradient(to top, #000, rgba(0,0,0,.01));
+	  color: #fff;
+	  text-align: center;
+	  transition: all .3s ease;
+  }
+  .descr h3 {
+	  color: #fff;
+	  line-height: 140px;
+	  font-size: 22px;
+	  font-weight: 400;
+  }
+  @media(min-width: 320px) {
+	  .tiles-box {
+		  display: none;
+	  }
+	  .card p{
+		  font-size: 0.9em;
+	  }
+	  
+  }
+  
+  @media(min-width: 320px) {
+	  .space-section {
+		  padding-top: 60px;
+		  padding-bottom: 60px;
+	  }
+  }
+  
+  @media(min-width: 768px) {
+	  .space-section {
+		  padding-top: 20px;
+		  padding-bottom: 80px;
+	  }
+  }
+  @media(max-width: 990px) {
+	  .page-content {
+		  display:block;
+		  padding:30px
+		  
+		}
+		.scard{
+		  margin-left:2px;
+		  margin-top:12px;
+	  }
+  }
+  @media(min-width: 768px) {
+	  .mob-list-projects {
+		  display: none;
+	  }
+	  .tiles-box,.color-bw, .descr {
+		  display: block;
+	  }
+	  .col-6,.col-7, .col-2-4 {
+		  height: 460px;
+	  }
+	  .tiles-box img {
+		  width: 100%;
+		  height: auto;
+	  }
+	  .col-6,.col-7 {
+		  width: 100%;
+	  }
+	  .col-2-4 {
+		  width: 100%;
+	  }
+	  .col-7:hover .descr, .col-6:hover .descr, .col-2-4:hover .descr {
+		  transition: all .3s ease;
+		  bottom: 0;
+	  }
+	  .card p{
+		  font-size: 1em;
+	  }
+  }
+  @media(min-width: 1200px) {
+	  .col-6 {
+		  width: 66.66%;
+	  }.col-6 {
+		  width: 33.33%;
+	  }
+	  .frard {
+		  width: 800px;
+		}
+  }
+  
