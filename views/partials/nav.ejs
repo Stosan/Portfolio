@@ -23,10 +23,35 @@
 				<li><a href="https://officialsamayo.medium.com">Articles</a></li>
 				<li><a href="/project">Projects</a></li>
 				<li><a href="#contacts">Get in touch</a></li>
-				<li><a href="#CV" style="border-radius: 25px; border: 1px solid rgb(158, 7, 7);padding: 5px 9px;">Download My CV<i class="material-icons ">cloud_download</i></a></li>
+				<li><a href="#CV" style="color:#fff;border-radius: 25px; background: var(--combo_color);padding: 5px 9px;">Download Resume <i class="material-icons ">cloud_download</i></a></li>
 				
 			</ul>
 		</nav>
 
 		</header>
 	</div>
+	<script>  
+		$(document).ready(function(){  
+		
+			(function($) { "use strict";
+
+$(function() {
+	var header = $("#nav");
+	$(window).scroll(function() {    
+		var scroll = $(window).scrollTop();
+	
+		if (scroll >= 10) {
+			header.removeClass('start-style').addClass("header-shadow");
+		} else {
+			header.removeClass(".header-shadow").addClass('start-style');
+		}
+	});
+});		
+	
+
+
+
+})(jQuery);
+		
+		})
+</script>
