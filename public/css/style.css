@@ -133,6 +133,7 @@ img {
 	vertical-align: middle;
 }
 .logo {
+	font-size: 20px;
     font-family: 'Poppins', sans-serif;
   content: "";
   height: 42px;
